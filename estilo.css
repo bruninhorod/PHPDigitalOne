@@ -1,0 +1,31 @@
+*{ margin: 0;  padding: 0; }
+
+body{
+	font-family: helvetica; 
+	font-size: 15px; 
+	color:#333;
+}
+
+header{
+	height: 120px; 
+	background-color: #262626;
+
+}
+
+footer{
+	height: 60px; 
+	background-color: #262626;
+
+}
+img{
+	height: 120px;
+}
+
+.container{
+	margin: 0 auto;
+	width: 960px;
+}
+
+#conteudo {
+	padding: 100px 0;
+}
