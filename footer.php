@@ -2,6 +2,8 @@
 
 <footer>
 	<div class="container">
-		teste
+		GreenFacebook © Copyright - Todos os direitos reservados.
 	</div>
 </footer>
+</body>
+</html>
