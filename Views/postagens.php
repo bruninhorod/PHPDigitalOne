@@ -1,5 +1,5 @@
-<a href="?pagina=inserir_postagem"> Criar uma nova postagem</a>
-<table style="border: 2px solid #ccc; width: 100%">
+<a class="btn btn-success" href="?pagina=inserir_postagem"> Criar uma nova postagem</a><br><br>
+<table class="table"style="border: 2px solid #ccc; width: 100%">
 	<tr>
 		<th> Título Postagem </th>
 		<th> Descrição </th>
@@ -19,7 +19,7 @@
 			echo '<td>'.$linha['id_user'].'</td>';
 	?>
 
-		<td><a href="?pagina=inserir_postagem&Editar=<?php echo $linha['id_postagem']; ?>">Editar</a></td>
+		<td><a href="?pagina=inserir_postagem&editar=<?php echo $linha['id_postagem']; ?>">Editar</a></td>
 
 		<td><a href="deleta_postagem.php?id_postagem=<?php echo $linha['id_postagem']; ?>">Deletar</a></td></tr>
 
