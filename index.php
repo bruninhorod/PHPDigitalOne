@@ -13,6 +13,10 @@ elseif($pagina == 'about'){
 	include 'Views/about.php';
 }
 
+elseif($pagina == 'inserir_postagem'){
+	include 'Views/inserir_postagem.php';
+}
+
 elseif($pagina == 'create'){
 	include 'Views/create.php';
 }
