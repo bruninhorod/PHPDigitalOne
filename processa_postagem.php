@@ -8,3 +8,5 @@ $img_url = $_POST['img_url'];
 $query = "INSERT INTO POSTAGENS(title, description, img_url) VALUES('$title', '$description', '$img_url')";
 
 mysqli_query($conexao, $query);
+
+header('location:index.php?pagina=postagens');

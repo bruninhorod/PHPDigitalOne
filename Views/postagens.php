@@ -2,10 +2,12 @@
 <table style="border: 2px solid #ccc; width: 100%">
 	<tr>
 		<th> Título Postagem </th>
-		<th> Descrição</th>
-		<th> Imagem URL</th>
+		<th> Descrição </th>
+		<th> Imagem URL </th>
 		<th> Criado em </th>
 		<th> Author </th>
+		<th> Editar </th>
+		<th> Deletar </th>
 	</tr>
 
 	<?php
@@ -14,8 +16,17 @@
 			echo '<td>'.$linha['description'].'</td>';
 			echo '<td>'.$linha['img_url'].'</td>';
 			echo '<td>'.$linha['created_at'].'</td>';
-			echo '<td>'.$linha['id_user'].'</td></tr>';
+			echo '<td>'.$linha['id_user'].'</td>';
+	?>
 
+		<td><a href="?pagina=inserir_postagem&Editar=<?php echo $linha['id_postagem']; ?>">Editar</a></td>
+
+		<td><a href="deleta_postagem.php?id_postagem=<?php echo $linha['id_postagem']; ?>">Deletar</a></td></tr>
+
+
+
+
+		<?php
 
 		}
 	?>
